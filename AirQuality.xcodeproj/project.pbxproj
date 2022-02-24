@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		32D4000027C7C36700C95A8F /* AirQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D4FFFF27C7C36700C95A8F /* AirQuality.swift */; };
 		32D4000327C7C38000C95A8F /* AirQualityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D4000227C7C38000C95A8F /* AirQualityController.swift */; };
+		32D4000627C7D20200C95A8F /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D4000527C7D20200C95A8F /* NetworkError.swift */; };
+		32D4000827C7F8FC00C95A8F /* CountryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D4000727C7F8FC00C95A8F /* CountryListTableViewController.swift */; };
+		32D4000A27C7F90E00C95A8F /* StateListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D4000927C7F90E00C95A8F /* StateListTableViewController.swift */; };
+		32D4000C27C7F91B00C95A8F /* CityListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D4000B27C7F91B00C95A8F /* CityListTableViewController.swift */; };
+		32D4000E27C7F92D00C95A8F /* CityDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D4000D27C7F92D00C95A8F /* CityDataViewController.swift */; };
 		32D4FFE727C7C2D900C95A8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D4FFE627C7C2D900C95A8F /* AppDelegate.swift */; };
 		32D4FFE927C7C2D900C95A8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D4FFE827C7C2D900C95A8F /* SceneDelegate.swift */; };
 		32D4FFEE27C7C2D900C95A8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32D4FFEC27C7C2D900C95A8F /* Main.storyboard */; };
@@ -18,6 +23,11 @@
 
 /* Begin PBXFileReference section */
 		32D4000227C7C38000C95A8F /* AirQualityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQualityController.swift; sourceTree = "<group>"; };
+		32D4000527C7D20200C95A8F /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		32D4000727C7F8FC00C95A8F /* CountryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListTableViewController.swift; sourceTree = "<group>"; };
+		32D4000927C7F90E00C95A8F /* StateListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateListTableViewController.swift; sourceTree = "<group>"; };
+		32D4000B27C7F91B00C95A8F /* CityListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListTableViewController.swift; sourceTree = "<group>"; };
+		32D4000D27C7F92D00C95A8F /* CityDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDataViewController.swift; sourceTree = "<group>"; };
 		32D4FFE327C7C2D900C95A8F /* AirQuality.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirQuality.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32D4FFE627C7C2D900C95A8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32D4FFE827C7C2D900C95A8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,10 +57,19 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		32D4000427C7D1E700C95A8F /* Helpers+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				32D4000527C7D20200C95A8F /* NetworkError.swift */,
+			);
+			path = "Helpers+Extensions";
+			sourceTree = "<group>";
+		};
 		32D4FFDA27C7C2D900C95A8F = {
 			isa = PBXGroup;
 			children = (
 				32D4FFE527C7C2D900C95A8F /* AirQuality */,
+				32D4000427C7D1E700C95A8F /* Helpers+Extensions */,
 				32D4FFE427C7C2D900C95A8F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -114,6 +133,10 @@
 		32D4FFFE27C7C35000C95A8F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				32D4000727C7F8FC00C95A8F /* CountryListTableViewController.swift */,
+				32D4000927C7F90E00C95A8F /* StateListTableViewController.swift */,
+				32D4000B27C7F91B00C95A8F /* CityListTableViewController.swift */,
+				32D4000D27C7F92D00C95A8F /* CityDataViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -189,10 +212,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32D4000C27C7F91B00C95A8F /* CityListTableViewController.swift in Sources */,
+				32D4000827C7F8FC00C95A8F /* CountryListTableViewController.swift in Sources */,
+				32D4000A27C7F90E00C95A8F /* StateListTableViewController.swift in Sources */,
 				32D4FFE727C7C2D900C95A8F /* AppDelegate.swift in Sources */,
 				32D4000027C7C36700C95A8F /* AirQuality.swift in Sources */,
 				32D4000327C7C38000C95A8F /* AirQualityController.swift in Sources */,
+				32D4000E27C7F92D00C95A8F /* CityDataViewController.swift in Sources */,
 				32D4FFE927C7C2D900C95A8F /* SceneDelegate.swift in Sources */,
+				32D4000627C7D20200C95A8F /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
