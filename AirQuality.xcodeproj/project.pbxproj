@@ -7,23 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32D4000027C7C36700C95A8F /* AirQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D4FFFF27C7C36700C95A8F /* AirQuality.swift */; };
+		32D4000327C7C38000C95A8F /* AirQualityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D4000227C7C38000C95A8F /* AirQualityController.swift */; };
 		32D4FFE727C7C2D900C95A8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D4FFE627C7C2D900C95A8F /* AppDelegate.swift */; };
 		32D4FFE927C7C2D900C95A8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D4FFE827C7C2D900C95A8F /* SceneDelegate.swift */; };
-		32D4FFEB27C7C2D900C95A8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D4FFEA27C7C2D900C95A8F /* ViewController.swift */; };
 		32D4FFEE27C7C2D900C95A8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32D4FFEC27C7C2D900C95A8F /* Main.storyboard */; };
 		32D4FFF027C7C2DA00C95A8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32D4FFEF27C7C2DA00C95A8F /* Assets.xcassets */; };
 		32D4FFF327C7C2DA00C95A8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32D4FFF127C7C2DA00C95A8F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32D4000227C7C38000C95A8F /* AirQualityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQualityController.swift; sourceTree = "<group>"; };
 		32D4FFE327C7C2D900C95A8F /* AirQuality.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirQuality.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32D4FFE627C7C2D900C95A8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32D4FFE827C7C2D900C95A8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		32D4FFEA27C7C2D900C95A8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		32D4FFED27C7C2D900C95A8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		32D4FFEF27C7C2DA00C95A8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32D4FFF227C7C2DA00C95A8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32D4FFF427C7C2DA00C95A8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32D4FFFF27C7C36700C95A8F /* AirQuality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQuality.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32D4000127C7C36C00C95A8F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				32D4FFFF27C7C36700C95A8F /* AirQuality.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		32D4FFDA27C7C2D900C95A8F = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +66,56 @@
 		32D4FFE527C7C2D900C95A8F /* AirQuality */ = {
 			isa = PBXGroup;
 			children = (
-				32D4FFE627C7C2D900C95A8F /* AppDelegate.swift */,
-				32D4FFE827C7C2D900C95A8F /* SceneDelegate.swift */,
-				32D4FFEA27C7C2D900C95A8F /* ViewController.swift */,
-				32D4FFEC27C7C2D900C95A8F /* Main.storyboard */,
-				32D4FFEF27C7C2DA00C95A8F /* Assets.xcassets */,
-				32D4FFF127C7C2DA00C95A8F /* LaunchScreen.storyboard */,
-				32D4FFF427C7C2DA00C95A8F /* Info.plist */,
+				32D4FFFC27C7C33000C95A8F /* Controllers */,
+				32D4FFFB27C7C32600C95A8F /* Views */,
+				32D4000127C7C36C00C95A8F /* Models */,
+				32D4FFFA27C7C30600C95A8F /* Resources */,
 			);
 			path = AirQuality;
+			sourceTree = "<group>";
+		};
+		32D4FFFA27C7C30600C95A8F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				32D4FFE627C7C2D900C95A8F /* AppDelegate.swift */,
+				32D4FFE827C7C2D900C95A8F /* SceneDelegate.swift */,
+				32D4FFEF27C7C2DA00C95A8F /* Assets.xcassets */,
+				32D4FFF427C7C2DA00C95A8F /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		32D4FFFB27C7C32600C95A8F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				32D4FFEC27C7C2D900C95A8F /* Main.storyboard */,
+				32D4FFF127C7C2DA00C95A8F /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		32D4FFFC27C7C33000C95A8F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				32D4FFFE27C7C35000C95A8F /* ViewControllers */,
+				32D4FFFD27C7C33700C95A8F /* ModelControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		32D4FFFD27C7C33700C95A8F /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				32D4000227C7C38000C95A8F /* AirQualityController.swift */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		32D4FFFE27C7C35000C95A8F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +189,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32D4FFEB27C7C2D900C95A8F /* ViewController.swift in Sources */,
 				32D4FFE727C7C2D900C95A8F /* AppDelegate.swift in Sources */,
+				32D4000027C7C36700C95A8F /* AirQuality.swift in Sources */,
+				32D4000327C7C38000C95A8F /* AirQualityController.swift in Sources */,
 				32D4FFE927C7C2D900C95A8F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,7 +342,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AirQuality/Info.plist;
+				INFOPLIST_FILE = AirQuality/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +369,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AirQuality/Info.plist;
+				INFOPLIST_FILE = AirQuality/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
